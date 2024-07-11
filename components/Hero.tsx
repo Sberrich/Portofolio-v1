@@ -2,6 +2,7 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextgenerateEffect";
 import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 function Hero() {
   return (
     <div className="pb-20 pt-36">
@@ -41,10 +42,10 @@ function Hero() {
             words="Crafting Ideas into Reality with Precision and Passion"
           />
           <p className="text-center md:tracking-wider text-sm md:text-lg lg:text-2xl ">
-            Hi I&apos;m Samir Berrichi, a Next.js Developer basd in Morocco{" "}
+            Hi I&apos;m Samir Berrichi, a Next.js Developer based in Morocco{" "}
           </p>
           <a href="#about">
-            <MagicButton title="Show my work" />
+            <MagicButton title="Show my work" icon={<FaLocationArrow/>} position="right"/>
           </a>
         </div>
       </div>
