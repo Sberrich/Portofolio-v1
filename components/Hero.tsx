@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextgenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { LampDemo } from "./ui/LampEffect";
 function Hero() {
   return (
     <div className="pb-20 pt-36">
@@ -36,7 +37,7 @@ function Hero() {
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Frontend web developer
           </h2>
-
+          
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Crafting Ideas into Reality with Precision and Passion"

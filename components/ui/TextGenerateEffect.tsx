@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/utils/cn";
+import { LampDemo } from "./LampEffect";
 
 export const TextGenerateEffect = ({
   words,
@@ -27,6 +28,7 @@ export const TextGenerateEffect = ({
 
   const renderWords = () => {
     return (
+      
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
@@ -34,6 +36,7 @@ export const TextGenerateEffect = ({
               key={word + idx}
               className={` ${idx > 3  ? 'text-purple' : 'dark:text-white text-black'} opacity-0`}
             >
+              
               {word}{" "}
             </motion.span>
           );
